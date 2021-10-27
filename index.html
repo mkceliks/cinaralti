@@ -6,7 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veggie</title>
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/app.css"> 
     <link
   rel="stylesheet"
   href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
@@ -167,18 +167,18 @@
     <div class="modal-content">
   
       <div class="mySlides">
-        <div class="numbertext">1 / 4</div>
+        <div class="numbertext">1 / 3</div>
         <img src="assets/img/hero01.png" style="width:100%">
       </div>
   
       <div class="mySlides">
-        <div class="numbertext">2 / 4</div>
+        <div class="numbertext">2 / 3</div>
         <img src="assets/img/hero02.png" style="width:100%">
       </div>
   
       <div class="mySlides">
-        <div class="numbertext">3 / 4</div>
-        <img src="assets/img/special-1.png" style="width:100%">
+        <div class="numbertext">3 / 3</div>
+        <img  src="assets/img/special-1.png" style="height: 100%;width: 100%;">
       </div>
   
   
@@ -1491,7 +1491,7 @@
             </div>
             
             <!--.footer-content-->
-            <p class="copy-info">Copyright 2017 © by Anna Dadej</p>
+            <p class="copy-info">Copyright 2021</p>
         </div>
         <!--.container-->
     </footer>
@@ -1549,6 +1549,7 @@ slidesPerView:3,
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
+    
   },
 
   // Navigation arrows
@@ -1562,6 +1563,28 @@ slidesPerView:3,
     el: '.swiper-scrollbar',
     
   },
+  breakpoints: {
+    
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    },
+    
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 40
+    },
+    760: {
+        slidesPerView: 3,
+        
+   }
+
+},
 });
 </script>
 <script>
